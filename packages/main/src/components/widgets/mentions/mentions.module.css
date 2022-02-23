@@ -1,0 +1,14 @@
+.mentions {
+    width: 100%;
+    margin: 5px;
+}
+
+.mentions--multiLine .mentions__control textarea {
+    padding: 7px 10px;
+    border-width: 0;
+}
+
+.mentions--multiLine .mentions__highlighter {
+    padding: 7px 10px;
+    line-height: normal;
+}

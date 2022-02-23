@@ -1,0 +1,31 @@
+{
+    "extends": [
+        "../../.eslintrc.json",
+        "airbnb/hooks",
+        "plugin:react-hooks/recommended",
+        "plugin:react/recommended",
+        "prettier/react"
+    ],
+    "ignorePatterns": [
+        "/dist",
+        "**/*.js"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "project": "tsconfig.json"
+    },
+    "plugins": [
+        "react",
+        "react-hooks"
+    ],
+    "rules": {
+        "@typescript-eslint/no-unused-vars": "off",
+        "react-hooks/exhaustive-deps": "warn",
+        "react-hooks/rules-of-hooks": "error",
+        "react/jsx-props-no-spreading": "off",
+        "react/prop-types": "off",
+        "react/require-default-props": 0
+    }
+}

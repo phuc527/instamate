@@ -1,0 +1,38 @@
+{
+    "extends": [
+        "../../.eslintrc.json",
+        "airbnb/hooks",
+        "plugin:react-hooks/recommended",
+        "plugin:react/recommended",
+        "prettier/react"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "project": "tsconfig.json"
+    },
+    "plugins": [
+        "react",
+        "react-hooks"
+    ],
+    "rules": {
+        "@typescript-eslint/no-unsafe-return": "off",
+        "react-hooks/exhaustive-deps": "warn",
+        "react-hooks/rules-of-hooks": "error",
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-uses-react": "off",
+        "react/prop-types": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/require-default-props": 0,
+        "prettier/prettier": 0,
+        "@typescript-eslint/restrict-template-expressions": ["off"],
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "argsIgnorePattern": "^(_|action|state)"
+            }
+        ],
+        "no-underscore-dangle": ["error", { "allow": ["__isNew__"] }]
+    }
+}
